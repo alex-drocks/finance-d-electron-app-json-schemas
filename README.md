@@ -6,6 +6,8 @@ Quand les fichiers .json ne respecte pas la structure d'object attendue, ils ne 
 Ce fichier est le plus important. C'est celui-ci qui détermine la structure globale du fichier JSON.
 Remarquez que celui-ci utilise des schemas qui sont localisés dans d'autres fichiers aux quels vous avez également accès.
 
+[Consultez notre schema d'importation JSON](https://github.com/alex-drocks/finance-d-electron-app-json-schemas/blob/main/schemas/schemaImportJSON.js)
+
 ### Le meilleur moyen de comprendre un schema JSON
 Le plus simple pour vous aider à comprendre le schema serait de créer un fichier d'exportation JSON directement dans le logiciel et de l'ouvrir dans votre éditeur de code.
 En faisant cela, vous auriez un exemple à suivre.
