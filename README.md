@@ -1,6 +1,6 @@
 # Schemas d'importation d'enregistrements pour le logiciel Finance D - Tenue de livres simplifiée
 Il s'agit des schemas JSON qui servent à la validation des enregistrements à importer dans un dossier du logiciel.
-Quand les fichiers .json ne respecte pas la structure d'object attendue, ils ne peuvent pas être importés.
+Quand les fichiers .json ne respectent pas la structure d'object attendue, ils ne peuvent pas être importés.
 
 ## schemas/schemaImportJSON.js
 Ce fichier est le plus important. C'est celui-ci qui détermine la structure globale du fichier JSON.
