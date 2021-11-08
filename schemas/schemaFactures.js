@@ -186,6 +186,10 @@ module.exports = {
                     type: 'number',
                     minimum: -99999999999999999999,
                     maximum: 99999999999999999999
+                },
+                'commentaire': {
+                    type: 'string',
+                    maximum: 330
                 }
             },
             additionalProperties: false
