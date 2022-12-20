@@ -1,0 +1,7 @@
+{
+  "name": "finance-d-electron-app-json-schemas",
+  "version": "1.9.2",
+  "devDependencies": {
+    "ajv": "^8.11.2"
+  }
+}

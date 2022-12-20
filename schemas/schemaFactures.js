@@ -113,7 +113,7 @@ module.exports = {
                                     },
                                     'description': {
                                         type: 'string',
-                                        maxLength: 400
+                                        maxLength: 2000
                                     }
                                 },
                                 additionalProperties: false
@@ -123,7 +123,7 @@ module.exports = {
                 },
                 'paiements': {
                     type: 'array',
-                    minItems: 1,
+                    minItems: 0,
                     'items': {
                         'anyOf': [
                             {
@@ -133,7 +133,7 @@ module.exports = {
                                 'items': [
                                     {
                                         type: 'string',
-                                        maxLength: 50
+                                        maxLength: 70
                                     },
                                     {
                                         type: 'string',
@@ -145,8 +145,8 @@ module.exports = {
                                     },
                                     {
                                         type: ['number', 'string'],
-                                        minimum: -99999999999999999999,
-                                        maximum: 99999999999999999999
+                                        minimum: validators.numberMin,
+                                        maximum: validators.numberMax
                                     }
                                 ]
                             }
@@ -161,31 +161,31 @@ module.exports = {
                         'anyOf': [
                             {
                                 type: 'number',
-                                minimum: -99999999999999999999,
-                                maximum: 99999999999999999999
+                                minimum: validators.numberMin,
+                                maximum: validators.numberMax
                             },
                             {
                                 type: 'number',
-                                minimum: -99999999999999999999,
-                                maximum: 99999999999999999999
+                                minimum: validators.numberMin,
+                                maximum: validators.numberMax
                             },
                             {
                                 type: 'number',
-                                minimum: -99999999999999999999,
-                                maximum: 99999999999999999999
+                                minimum: validators.numberMin,
+                                maximum: validators.numberMax
                             },
                             {
                                 type: 'number',
-                                minimum: -99999999999999999999,
-                                maximum: 99999999999999999999
+                                minimum: validators.numberMin,
+                                maximum: validators.numberMax
                             }
                         ]
                     }
                 },
                 'solde': {
                     type: 'number',
-                    minimum: -99999999999999999999,
-                    maximum: 99999999999999999999
+                    minimum: validators.numberMin,
+                    maximum: validators.numberMax
                 },
                 'commentaire': {
                     type: 'string',

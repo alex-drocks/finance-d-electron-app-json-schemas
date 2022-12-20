@@ -3,6 +3,7 @@
 // All schemas must use JSON Schema version: draft-07
 const schemaClientsFournisseurs = require('./schemaClientsFournisseurs');
 const schemaFactures = require('./schemaFactures');
+const schemaCategories = require('./schemaCategories');
 const validators = require('./validators');
 
 module.exports = {
@@ -65,7 +66,9 @@ module.exports = {
                 'clients': schemaClientsFournisseurs,
                 'fournisseurs': schemaClientsFournisseurs,
                 'facturesRevenus': schemaFactures,
-                'facturesDepenses': schemaFactures
+                'facturesDepenses': schemaFactures,
+                'categoriesRevenus': schemaCategories,
+                'categoriesDepenses': schemaCategories
             },
             additionalProperties: false
         }

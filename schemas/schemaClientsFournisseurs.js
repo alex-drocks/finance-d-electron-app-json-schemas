@@ -74,7 +74,19 @@ module.exports = {
             'lastTimeUsed': {
                 type: 'integer',
                 maximum: validators.dateUnixMillisecondsMax
-            }
+            },
+            'methodePaiement': {
+                type: 'string',
+                maxLength: 100
+            },
+            'conditionPaiement': {
+                type: 'string',
+                maxLength: 100
+            },
+            'noteAdditionnelle': {
+                type: 'string',
+                maxLength: 200
+            },
         },
         additionalProperties: false
     }

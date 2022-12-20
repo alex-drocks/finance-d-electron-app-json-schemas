@@ -12,5 +12,7 @@ module.exports = {
     emailAddressMaxLength: 320,
     montant: '^-?[0-9]{0,3}\\s?[0-9]{0,3}\\s?[0-9]{0,3}\\s?[0-9]{0,3}\\.?[0-9]{0,20}$',
     quantite: '^-?[0-9]{0,4}\\.?[0-9]{0,2}$',
-    codesTaxesEnum: getCodesTaxes()
+    codesTaxesEnum: getCodesTaxes(),
+    numberMin: -99999999999999999999,
+    numberMax: 99999999999999999999
 };
